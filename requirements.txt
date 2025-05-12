@@ -1,0 +1,13 @@
+fastapi
+numpy==2.1.1
+ultralytics==8.3.111
+onnxruntime>=1.15.0
+onnx>=1.14.0
+loguru
+dishka
+pydantic
+uvicorn
+torch>=2.0.0
+onnxruntime-gpu
+Pillow>=10.0.0
+httpx>=0.24.0
