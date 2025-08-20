@@ -913,3 +913,4 @@ temporary/
 temp/
 /storage/
 /tmp/
+.vercel
