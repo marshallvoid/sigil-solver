@@ -148,12 +148,6 @@ Run the server in reload mode:
 uv run uvicorn sigil.main.api.native:app --reload --host 0.0.0.0 --port 8000
 ```
 
-Run tests:
-
-```bash
-uv run pytest -q
-```
-
 Code style and tooling:
 
 -  Formatter: black, isort
@@ -170,19 +164,6 @@ Code style and tooling:
    -  Reduce `imgsz` or confidence thresholds in `RecognizerService._predict` if customizing.
 -  HTTP 400 when downloading images:
    -  Ensure the URL is reachable and returns an `image/*` content type.
-
-### Project Structure (selected)
-
-```
-sigil/
-  core/                 # settings, logging, DI providers
-  main/api/             # FastAPI app factory and native app entry
-  main/cli/             # Typer CLI factory
-  presentation/         # routers, views, responses, exceptions
-  schemas/              # request/response models
-  services/             # Recognizer service (YOLO + ONNX)
-  models/yolo/          # ONNX model files
-```
 
 ### License
 
